@@ -45,7 +45,7 @@ To address the limitation of receiving only 10 job results per API call within t
 | via            | Source platform or website via which the job listing was found.             | String        | "via LinkedIn"                                       |
 | job_link_url   | URL to the job listing on the source platform or website.                   | String        | A Google search URL pointing to job listing details. |
 | job_link_text  | Text associated with the job listing link.                                  | String        | "See web results for GOBankingRates"                 |
-| description    | Brief description of the job listing.                                      | String        | "GOBankingRates™ is unique in the digital marketing..." |
+| description    | Brief description of the job listing.                                      | String        | "GOBankingRatesâ„¢ is unique in the digital marketing..." |
 | extensions     | Additional details about the job listing such as date posted, employment type, and benefits. | String | "1 day ago--Work from home--Full-time--Health insurance" |
 | job_id         | Encoded identifier for the job listing, potentially used by the API.        | String        | An encoded string representing the job's unique ID.  |
 | api_status     | Status of the job listing retrieval via API.                                | String        | "Success"                                            |
@@ -57,7 +57,7 @@ To address the limitation of receiving only 10 job results per API call within t
 
 ## High-Level EDA on Job Listings Dataset
 
-[IMAGE HERE] - A - DATAPREP RAW EDA OVERVIEW
+![Data Preparation - Raw Overview](https://github.com/Prvargas/job-webscraper/blob/main/img/A%20-%20Dataprep_Raw_Overview.png)
 
 ### Dataset Overview
 - **Total Entries**: 100 job listings.
@@ -69,14 +69,14 @@ To address the limitation of receiving only 10 job results per API call within t
 
 
 
-[IMAGE HERE] - B - DATAPREP RAW EDA Variables
+![Data Preparation - Raw Variables](https://github.com/Prvargas/job-webscraper/blob/main/img/B%20-%20Dataprep_Raw_Variables.png)
 
 
 
 
 # 3. Data Cleaning and Preprocessing
 
-[IMAGE HERE] - B - DATAPREP RAW EDA Duplicates
+![Data Preparation - Raw Duplicates](https://github.com/Prvargas/job-webscraper/blob/main/img/C%20-%20Dataprep_Raw_Duplicates.png)
 
 
 ### Handling Duplicates
@@ -172,7 +172,8 @@ Use the following job data to create the example JSON:
 
 ## High-Level EDA on Transformed Job Listings Dataset
 
-[IMAGE HERE] - D - DATAPREP TRANSFORMATION EDA OVERVIEW
+![Data Preparation - Transform Overview](https://github.com/Prvargas/job-webscraper/blob/main/img/D%20-%20Dataprep_Transform_Overview.png)
+
 
 ### Key Takeaways
 
@@ -207,7 +208,7 @@ Use the following job data to create the example JSON:
 - **Educational Requirements**: Analysis of educational requirements across industries and job roles can be conducted, offering insights into the qualifications demanded by employers.
 
 
-[IMAGE HERE] - E - DATAPREP TRANSFORMATION EDA VARIABLES
+![Data Preparation - Transform Variables](https://github.com/Prvargas/job-webscraper/blob/main/img/E%20-%20Dataprep_Transform_Variables.png)
 
 
 
@@ -224,7 +225,8 @@ Use the following job data to create the example JSON:
 
 ## 5A. Which industry demonstrates the highest demand for Data Scientists??
 
-[IMAGE HERE] - 01 ANALYSIS IMG
+![Top 5 Industries Hiring the Most Data Scientists](https://github.com/Prvargas/job-webscraper/blob/main/img/01-Top_5_Hiring.png)
+
 
 The visualization and data indicate that the top 5 industries hiring the most Data Scientists are:
 - **Social Media** with 10 job listings
@@ -254,7 +256,7 @@ Overall, the prominence of the Social Media industry as a leading hirer of Data 
 
 ## 5B. Which industry offers the most competitive average salary?
 
-[IMAGE HERE] - 02 ANALYSIS IMG
+![Top 5 Industries with Highest Average Minimum Salary](https://github.com/Prvargas/job-webscraper/blob/main/img/02-Top_5_Salary_Min.png)
 
 The horizontal bar chart visualizes the top 5 industries with the highest average minimum salary for Data Scientists, each labeled with the specific average minimum salary value. These industries are:
 - **Music** with an average minimum salary of ``$200,000``
@@ -282,9 +284,11 @@ For job seekers in the field of data science, the finding that the **Music** ind
 
 
 ## 5C. Which industries mandate educational qualifications beyond a bachelor's degree?
-[IMAGE HERE] - 04 ANALYSIS IMG
 
-[IMAGE HERE] - 03 ANALYSIS IMG
+![Education Level Requirements Pie Chart](https://github.com/Prvargas/job-webscraper/blob/main/img/04-Education_PieChart.png)
+
+![Education Level Requirements Heatmap](https://github.com/Prvargas/job-webscraper/blob/main/img/03-Education_Heatmap.png)
+
 
 ### CONSULTING
 For job seekers aiming at the data science market, the insight that the Consulting industry predominantly requires education levels beyond a Bachelor's degree holds significant implications:
@@ -307,7 +311,8 @@ For job seekers aiming at the data science market, the insight that the Consulti
 
 ### ON-SITE:
 
-[IMAGE HERE] - 05 ANALYSIS IMG
+![Top 5 Industries Requiring On-site Work](https://github.com/Prvargas/job-webscraper/blob/main/img/05-Top_5_Onsite.png)
+
 
 The horizontal bar chart above displays the top 5 industries requiring on-site work for Data Scientists:
 
@@ -322,7 +327,7 @@ This visualization highlights industries with a strong preference for on-site da
 
 ### REMOTE:
 
-[IMAGE HERE] - 06 ANALYSIS IMG
+![Top 5 Industries Allowing Remote Work](https://github.com/Prvargas/job-webscraper/blob/main/img/06-Top_5_Remote.png)
 
 The horizontal bar chart above illustrates the top 5 industries allowing remote work for Data Scientists:
 
@@ -339,7 +344,8 @@ This visualization showcases industries more inclined to offer remote work oppor
 
 ### OVERALL - PIE CHART
 
-[IMAGE HERE] - 07 ANALYSIS IMG
+![Remote Work Status Pie Chart](https://github.com/Prvargas/job-webscraper/blob/main/img/07-Remote_Status_PieChart.png)
+
 
 This visualization offers a straightforward snapshot of work arrangement trends in the data science sector, highlighting that a majority (58%) of job listings favor on-site work.
 
@@ -348,7 +354,7 @@ This visualization offers a straightforward snapshot of work arrangement trends 
 
 ## 5E. What is the relationship between salary and remote work status? 
 
-[IMAGE HERE] - 08 ANALYSIS IMG
+![Remote Work Salary Box Plot](https://github.com/Prvargas/job-webscraper/blob/main/img/08-Remote_Salary_BoxPlot.png)
 
 The boxplot visualizes the relationship between minimum salary and remote work status for Data Scientist positions. It compares the distribution of minimum salaries across different categories of remote work: On-Site, Remote, Hybrid, and Ambiguous. 
 
