@@ -32,7 +32,8 @@ The choice of SerpAPI is driven by its capability to source job listings from a 
 ### Implementation of a Custom Job Search Enhancement
 To address the limitation of receiving only 10 job results per API call within the free tier of SerpAPI's Google Jobs engine, a specialized Python class has been developed. This class is capable of fetching additional pages, thereby significantly increasing the volume of unique job listings obtained.
 
-[IMAGE HERE] - SEARCH FUNCTION WORKFLOW
+<img src="https://github.com/Prvargas/job-webscraper/blob/main/img/F%20-%20Search_Function_Roadmap.png" width="350" height="900" alt="Search Function Roadmap">
+
 
 ### Data Dictionary - Raw Data
 
@@ -90,7 +91,7 @@ Initially, the "job_id" column was assessed for identifying duplicate job listin
 The OpenAI ChatGPT chat completion API was used to transform the raw job listings data. This approach overcomes max token issues as well as memory context loss issues.
 
 
-[IMAGE HERE] - TRANSFORMATION FUNCTION WORKFLOW
+<img src="https://github.com/Prvargas/job-webscraper/blob/main/img/G%20-%20Transform_Function_Roadmap.png" width="350" height="450">
 
 
 ### PROMPT USED IN API CALLS
@@ -386,6 +387,12 @@ In conclusion, the intersection of data science and LLM API technology not only 
 
 This project highlights the effectiveness of LLM API technology in making the job search process more accessible and informative for data science professionals, pointing towards a future where data-driven decision-making is at the forefront of career advancement strategies.
 
+
+# If I had more time
+
+- Expand the dataset beyond the initial 100 records to include a more comprehensive array of job listings, enhancing the robustness and accuracy of our analysis.
+- Implement targeted querying to balance the dataset, specifically focusing on "Contract" and "Remote" roles, to better understand the nuances of different work arrangements within the data science field.
+- Improve industry classification by bucketing similar industries together, which would allow for more nuanced insights and a better understanding of overarching trends across related sectors.
 
 
 
